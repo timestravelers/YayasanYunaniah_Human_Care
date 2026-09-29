@@ -1,4 +1,4 @@
-const API_URL='PASTE_APPS_SCRIPT_WEB_APP_EXEC_URL_HERE';
+const API_URL='https://script.google.com/macros/s/AKfycbxPlrfqpUn5M0CJfqOzmYhV-g14L4T_5DjGC7L3BgZkaVwo_J335X82vquzBbM1OSCgSA/exec';
 let state={settings:{},program:[],kampanye:[],kegiatan:[],artikel:[],gallery:[],laporan:[],rekening:[],stats:{}};
 const esc=v=>String(v??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m]));
 const rupiah=v=>new Intl.NumberFormat('id-ID',{style:'currency',currency:'IDR',maximumFractionDigits:0}).format(Number(v||0));
