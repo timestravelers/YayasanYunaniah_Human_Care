@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Yayasan Yunainah Human Care</title>
+  <title>Yayasan Yunaniah Human Care</title>
   <link rel="icon" href="https://lh3.googleusercontent.com/d/1oAMkCsDCbhHwpZormI7J-vCYAPxt_r8K=s0" />
   <style>
     html, body {
@@ -32,7 +32,8 @@
 <body>
   <div class="iframe-container">
     <iframe
-     id="app"      src="https://script.google.com/macros/s/AKfycbyhb8Jws6NG0q2HkP_5kVYqb3NNgjb6X3DPw8NqyTxw5ki5xQs6gSDOsZQpDuNEIEZGMg/exec"
+      id="myIframe"
+      src="https://script.google.com/macros/s/AKfycbyhb8Jws6NG0q2HkP_5kVYqb3NNgjb6X3DPw8NqyTxw5ki5xQs6gSDOsZQpDuNEIEZGMg/exec"
       scrolling="yes"
       allowfullscreen="true"
       webkitallowfullscreen="true"
@@ -42,15 +43,14 @@
   </div>
 
   <script>
-  // Script untuk meneruskan parameter URL dari Vercel ke dalam Iframe GAS
-  const urlParams = new URLSearchParams(window.location.search);
-  const page = urlParams.get('page');
-  
-  if (page) {
-    const iframe = document.getElementById('myIframe');
-    iframe.src = "https://script.google.com/macros/s/AKfycbyhb8Jws6NG0q2HkP_5kVYqb3NNgjb6X3DPw8NqyTxw5ki5xQs6gSDOsZQpDuNEIEZGMg/exec?page=" + page;
-  }
-</script>
-  
+    // Script untuk meneruskan parameter URL dari Vercel ke dalam Iframe GAS
+    const urlParams = new URLSearchParams(window.location.search);
+    const page = urlParams.get('page');
+    
+    if (page) {
+      const iframe = document.getElementById('myIframe');
+      iframe.src = "https://script.google.com/macros/s/AKfycbyhb8Jws6NG0q2HkP_5kVYqb3NNgjb6X3DPw8NqyTxw5ki5xQs6gSDOsZQpDuNEIEZGMg/exec?page=" + page;
+    }
+  </script>
 </body>
 </html>
