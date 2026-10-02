@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    {
+      "source": "/gas",
+      "destination": "https://script.google.com/macros/s/AKfycbyySxJ_6PTXaAl5AtHE5sCLMrmsgS7zC3VbX-szKxFPecGiDKrz5DD1x0IOzqxRKHCHMQ/exec"
+    },
+    {
+      "source": "/gas/:path*",
+      "destination": "https://script.google.com/macros/s/AKfycbyySxJ_6PTXaAl5AtHE5sCLMrmsgS7zC3VbX-szKxFPecGiDKrz5DD1x0IOzqxRKHCHMQ/exec/:path*"
+    }
+  ]
+}
