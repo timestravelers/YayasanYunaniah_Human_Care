@@ -42,15 +42,15 @@
     </iframe>
   </div>
 
+
   <script>
-    // Meneruskan parameter URL dari Vercel ke backend GAS
+    // Script untuk meneruskan parameter URL dari Vercel ke dalam Iframe GAS
     const urlParams = new URLSearchParams(window.location.search);
     const page = urlParams.get('page');
-
+    
     if (page) {
       const iframe = document.getElementById('myIframe');
-
-      iframe.src = '/gas?page=' + encodeURIComponent(page);
+      iframe.src = "https://script.google.com/macros/s/AKfycbyySxJ_6PTXaAl5AtHE5sCLMrmsgS7zC3VbX-szKxFPecGiDKrz5DD1x0IOzqxRKHCHMQ/exec?page=" + page;
     }
   </script>
 
